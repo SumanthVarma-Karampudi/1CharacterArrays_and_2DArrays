@@ -1,0 +1,305 @@
+https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-before-starting-dsa/
+
+#include<iostream>
+using namespace std;
+
+void print1(int n) {
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= n; j++) {
+			cout << "*";
+		}
+		cout << endl << endl;
+	}
+}
+void print2(int n) {
+	for (int i = 1; i < n; i++) {
+		for (int j = 1; j <= i; j++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+}
+void print3(int n) {
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= i; j++) {
+			cout << j;
+		}
+		cout << endl;
+	}
+}
+void print4(int n) {
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= i; j++) {
+			cout << i;
+		}
+		cout << endl;
+	}
+}
+void print5(int n) {
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= n - i + 1; j++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+}
+void print6(int n) {
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= n - i + 1; j++) {
+			cout << j;
+		}
+		cout << endl;
+	}
+}
+void print7(int n) {
+	for (int i = 1; i <= n; i++) {
+		for (int k = 1; k <= n - i; k++) {
+			cout << " ";
+		}
+		for (int j = 1; j <= 2 * i - 1; j++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+}
+void print8(int n) {
+	for (int i = 1; i <= n; i++) {
+		for (int k = 1; k <= i - 1; k++) {
+			cout << " ";
+		}
+		for (int j = 1; j <= 2 * (n - i + 1) - 1; j++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+}
+void print9(int n) {
+	for (int i = 1; i <= n; i++) {
+		for (int k = 1; k <= n - i; k++) {
+			cout << " ";
+		}
+		for (int j = 1; j <= 2 * i - 1; j++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+	for (int i = 1; i <= n; i++) {
+		for (int k = 1; k <= i - 1; k++) {
+			cout << " ";
+		}
+		for (int j = 1; j <= 2 * (n - i + 1) - 1; j++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+}
+void print10(int n) {
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= i; j++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+	for (int i = 1; i < n; i++) {
+		for (int j = 1; j <= n - i; j++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+}
+void print11(int n) {
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= i; j++) {
+			if (i % 2 == 0 && j % 2 == 0 || i % 2 != 0 && j % 2 != 0) {
+				cout << "1";
+			}
+
+			else
+				cout << "0";
+		}
+		cout << endl;
+	}
+}
+void print12(int n) {
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= i; j++) {
+			cout << j;
+		}
+		for (int k = 1; k <= 2 * (n - i); k++) {
+			cout << " ";
+		}
+		int s = i;
+		for (int l = 1; l <= i; l++) {
+			cout << s - l + 1;
+		}
+		cout << endl;
+	}
+}
+void print13(int n) {
+	int t = 1;
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= i; j++) {
+			cout << t << " ";
+			t++;
+		}
+		cout << endl;
+	}
+}
+void print14(int n) {
+	char ch = 'A';
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= i; j++) {
+			char c = ch + j - 1;
+			cout << c;
+		}
+		cout << endl;
+	}
+}
+void print15(int n) {
+	char ch = 'A';
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= n - i + 1; j++) {
+			char c = ch + j - 1;
+			cout << c;
+		}
+		cout << endl;
+	}
+}
+void print16(int n) {
+	char ch = 'A';
+	for (int i = 1; i <= n; i++) {
+		char c = ch + i - 1;
+		for (int j = 1; j <= i; j++) {
+			cout << c;
+		}
+		cout << endl;
+	}
+}
+void print17(int n) {
+	char ch = 'A';
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= n - i; j++) {
+			cout << " ";
+		}
+		for (int k = 1; k <= i; k++) {
+			char c = ch + k - 1;
+			cout << c;
+		}
+		char s = ch + i - 2;
+		for (int l = 1; l <= i - 1; l++) {
+			char st = s - l + 1;
+			cout << st;
+		}
+		cout << endl;
+	}
+}
+void print18(int n) {
+	char ch = 'A';
+	for (int i = 1; i <= n; i++) {
+		char ch1 = ch + (n - 1) - i + 1;
+		for (int j = 1; j <= i; j++) {
+			char ch2 = ch1 + j - 1;
+			cout << ch2;
+		}
+		cout << endl;
+	}
+}
+void print19(int n) {
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= n - i + 1; j++) {
+			cout << "*";
+		}
+		for (int k = 1; k <= 2 * (i - 1); k++) {
+			cout << " ";
+		}
+		int s = i;
+		for (int l = 1; l <= n - i + 1; l++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= i; j++) {
+			cout << "*";
+		}
+		for (int k = 1; k <= 2 * (n - i); k++) {
+			cout << " ";
+		}
+		int s = i;
+		for (int l = 1; l <= i; l++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+}
+void print20(int n) {
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= i; j++) {
+			cout << "*";
+		}
+		for (int k = 1; k <= 2 * (n - i); k++) {
+			cout << " ";
+		}
+		int s = i;
+		for (int l = 1; l <= i; l++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+	for (int i = 1; i < n; i++) {
+		for (int j = 1; j <= (n - 1) - i + 1; j++) {
+			cout << "*";
+		}
+		for (int k = 1; k <= 2 * i; k++) {
+			cout << " ";
+		}
+		int s = i;
+		for (int l = 1; l <= (n - 1) - i + 1; l++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+
+}
+
+void print21(int n) {
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= n; j++) {
+			if (i == 1 || i == n || j == 1 || j == n) {
+				cout << "*";
+			}
+			else {
+				cout << " ";
+			}
+		}
+		cout << endl;
+	}
+}
+
+void print22(int n) {
+	for (int i = 0; i < 2 * n - 1; i++) {
+		for (int j = 0; j < 2 * n - 1; j++) {
+			int left = j;
+			int top = i;
+			int right = (2 * n - 2) - j;
+			int bottom = (2 * n - 2) - i;
+
+			cout << (n - min(min(left, right), min(top, bottom)));
+		}
+		cout << endl;
+	}
+}
+
+int main() {
+#ifndef ONLINE_JUDGE
+	freopen("input1.txt", "r", stdin);
+	freopen("output1.txt", "w", stdout);
+#endif
+	int t;
+	cin >> t;
+	for (int i = 0; i < t; i++) {
+		int n;
+		cin >> n;
+		//call the fuction you wanted to print
+	}
+}
